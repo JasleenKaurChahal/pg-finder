@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>VIEW PG'S LIST:-</title>
+</head>
+<body background="back.jpg">
+        <h1>PG'S IN SEARCHED AREAS</h1>
+        <table border=1 cellspacing=0 style="font-size:20px";
+        <tr>
+        <th>Pin</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Rent</th>
+        <th>Amenities</th>
+        <th>Book now</th>
+        </tr>
+        <%if(data.length){
+        for(var i=0;i<data.length;i++){%>
+        <tr>
+        <td><%=data[i].pin%></td>  
+        <td><%=data[i].state%></td>
+        <td><%=data[i].city%></td>
+        <td><%=data[i].rent%></td>
+        <td><%=data[i].amenities%></td>        
+        <td><a href="/user_booking %>">Book Now</a></td>
+        <tr>
+               <%}
+          }
+        else
+        {%>
+        <tr>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
+        </tr>
+        <%}%>
+        </table>
+        <br>
+        <a href="/">Home</a>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "aa",
+  "version": "1.1.1",
+  "description": "aaaa",
+  "main": "aaa",
+  "scripts": {
+    "test": "aaa",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "aaa"
+  },
+  "keywords": [
+    "aaa"
+  ],
+  "author": "aaa",
+  "license": "(ISC)",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongo": "^0.1.0",
+    "routes": "^2.1.0"
+  }
+}

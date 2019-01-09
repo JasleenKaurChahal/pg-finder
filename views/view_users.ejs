@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>VIEW USERS</title>
+        <style>
+                        body{
+                       padding: 25px;
+                       background: url(1.jpg);
+                     }
+                     p{
+                       font-size:50px; 
+                       color:white; 
+                       text-align:center;
+                     }
+                     h2{
+                       background-color:White; 
+                       color:white; 
+                       text-align:center;
+                     }
+                     a {
+                   line-height: 1em;
+                   display: inline-block;
+                   text-decoration: none;
+                   padding: 10px;
+                   margin: 10px;
+               }
+               </style>
+</head>
+<body>
+        <p>LIST OF USERS</p>
+        <table border=1 cellspacing=0 style="font-size:20px" bgcolor="white" align="center";
+        <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Delete</th>
+        <th>Edit</th>
+        </tr>
+        <%if(data.length){
+        for(var i=0;i<data.length;i++){%>
+        <tr>
+        <td><%=data[i].name%></td>
+        <td><%=data[i].email%></td>
+         
+        <td><%=data[i].password%></td>
+        
+        <td><a href="/delete3/<%=data[i].email%>">Delete</a></td>
+
+        
+        <td><a href="">Edit</a></td>
+        <tr>
+               <%}
+          }
+        else
+        {%>
+        <tr>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
+        </tr>
+        <%}%>
+        </table>
+        <br>
+        <h2><a  href="/admin">Admin</a><a  href="/">Home </a></h2>
+</body>
+</html>

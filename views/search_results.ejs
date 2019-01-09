@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VIEW SEARCH RESULTS</title>
+        <style>
+                body{
+               padding: 25px;
+               background: url(back.jpg);
+             }
+             p{
+               font-size:50px; 
+               color:white; 
+               text-align:center;
+             }
+             h2{
+               background-color:White; 
+               color:white; 
+               text-align:center;
+             }
+             a {
+           line-height: 1em;
+           display: inline-block;
+           text-decoration: none;
+           padding: 10px;
+           margin: 10px;
+       }
+       </style>
+    </head>
+        <body>
+            <p><u>PG ACCORDING TO SEARCH RESULTS</u></p>
+            <table border=1 cellspacing=0 style="font-size:20px" bgcolor="white" align="center";<tr>
+<th>State</th>
+<th>City</th>
+<th>Pin/ZIP Code</th>
+<th>BOOK NOW</th>
+</tr>
+<%if(data.length){
+for(var i=0;i<data.length;i++){%>
+<tr>
+<td><%=data[i].state%></td>
+<td><%=data[i].city%></td>
+<td><%=data[i].pin%></td>
+
+
+<td><a href="/user_booking %>">Book Now</a></td>
+<tr> <!--do not close this else error-->
+       <%}
+  }
+else
+{%>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<%}%>
+</table>
+<br>
+<h2><a href="/">Home</a></h2>
+                
+</body>
+</html>

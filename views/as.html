@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$("#li-id1").click(function () {
+			$(this).animate({color:"red"});
+			$(".div1").toggle(500);
+			$(".div2").hide();
+			$(".div3").hide();
+			$(".div4").hide();
+		});
+		$("#li-id2").click(function () {
+			$(".div2").toggle(500);
+			$(".div1").hide();
+			$(".div3").hide();
+			$(".div4").hide();
+		});
+		$("#li-id3").click(function () {
+			$(".div3").toggle(100);
+			$(".div1").hide();
+			$(".div2").hide();
+			$(".div4").hide();
+		});
+		$("#li-id4").click(function () {
+			$(".div4").toggle(100);
+			$(".div1").hide();
+			$(".div2").hide();
+			$(".div3").hide();
+		});
+	});
+</script>
+	<style type="text/css">
+		.ul1{
+			display: inline;
+			
+			font-size: 40px;
+			border: 2px solid black;
+		}
+		.li1{
+			display: inline;
+			
+			margin:5px;
+			font-size: 40px;
+
+		}
+		.a1{
+			color:navy; 
+		}
+		.a2{
+			color: white;
+		}
+		.sidebar{
+			mar
+			background: gray;
+			width: 12%;
+			margin-top: 0px;
+			font-size: 30px;
+
+		}
+		
+	</style>
+	<link type="text/css" rel="stylesheet" href="js-image-slider.css">
+	<script type="text/javascript" src="js-image-slider.js"></script>
+</head>
+<body>
+	<div class="slider" align="center">
+		<div id="sliderFrame">
+			<div id="slider">
+				<img src="a1.jpg" alt="flowers">
+				<img src="a2.jpg">
+				<img src="a3.jpg">
+			</div>
+		</div>
+	</div>
+	<div style=" background-color: lightgrey; width: 100%; height:500px;" >
+<ul class="ul1">
+
+	<li class="li1" id="li-id1"><a class="a1" href="#home">Home</a></li>
+	<li class="li1" id="li-id2"><a  class="a1" href="#about us">About us</a></li>
+	<li class="li1" id="li-id3"><a  class="a1" href="#Contact">Contact</a></li>
+	<li class="li1" id="li-id4"><a  class="a1" href="#Register">Register</a></li>
+</ul>
+
+<div class="div1" style="background-color:magenta; height: 300px; width:150px; font-size: 2em" hidden="">
+	<div><a  class="a2" href="as.html">Home</a></div>
+	<div><a class="a2" href="imagehide.html">About Us</a></div>
+	<div><a class="a2" href="contactus.html">Contact</a></div>
+	<div><a  class="a2"href="fvalidationjquery.html">Register</a></div>
+
+
+</div>
+<div class="div2" style="background-color: yellow; height: 450px; width:100%;" hidden="">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+		$(".1").click(function () {
+		$(this).hide(1000);
+		}),
+		$(".2").click(function () {
+		$(this).hide(2000);
+		$(".btn").click(function () {
+		$(".2").show(2000);
+		})
+		}),
+		$(".3").click(function () {
+			$(this).hide(1000);
+		}),
+		$(".4").click(function () {
+			$(this).hide(2000);
+		});
+		});
+	</script>
+
+<body>
+<div align="center"><img class="1" src="1.jpg" width="200px" height="200px;" >
+<img class="2" src="2.jpg" width="200px" height="200px;"></div>
+<div align="center"><img class="3" src="3.jpg" width="200px" height="200px;">
+<img class="4" src="4.jpg" width="200px" height="200px;"></div>
+<input type="button" class="btn" value="image2" style="margin-left: 500px">
+
+</div>
+<div class="div3" style="background-color: lightgreen; height: 450px; width:100%;"  hidden="" >
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+		$(".address1").click(function () {
+		$(this).hide(100);
+		});
+		$(".address2").mouseover(function () {
+		$(this).hide(200);
+		});
+		$(".address3").dblclick(function () {
+			$(this).hide(200);
+		})
+		});
+	</script>
+</head>
+<body>
+<div>
+	<div style="border: 1px solid black; width: 200px" class="address1" >
+		<b><p>Office Address:</p></b>
+		<p>sco-28-29,sector-34a,Chandigarh</p>
+	</div><hr>
+	<div style="border: 1px solid black; width: 200px" class="address2" >
+		<b><p>Head-Office Address:</p></b>
+		<p>sco-405-406,sector-59,Mumbai</p>
+	</div>
+	<hr>
+	<div style="border: 1px solid black; width: 200px" class="address3" >
+		<b><p>Head-Office Address:</p></b>
+		<p>sco-405-406,sector-59,Mumbai</p>
+	</div>
+
+</div>
+</div>
+
+<div class="div4" style="background-color: grey; height: 450px; width:100%;" hidden=""  >
+	
+
+	<style type="text/css">
+		input.i1{
+			background-color: lightgray;
+			height: 20px;
+			width: 300px;
+			padding: 5px;
+			margin:5px;
+		}
+		input.i2{
+			border-style:dashed solid;
+			border-radius: 20px;
+
+		}
+		h1{
+			background-color: red;
+		}
+	</style>
+	
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.validate.min.js"></script>
+	
+<script type="text/javascript">
+	$(document).ready(function () {
+	$("#register-form").validate({
+		rules:{
+			lastname:"required",
+		email:{
+			required:true,
+			email:true
+		},
+		password:{
+			required:true,
+			minlength:8
+		},
+		firstname:{
+			required:true,
+			minlength:4
+		},
+		address:{
+			required:true,
+			minlength:20
+		},
+	},
+		messages:{
+			firstname:"<br>Please Enter First Name ",
+			lastname:"<br>Please Enter Last Name",
+			address:"<br>Enter valid address.",
+			password:{
+				required:"<br>Please Enter Password",
+				minlength:"<br>Enter atlease 8 characters."
+
+		},
+		email:"<br>Please Enter valid email",
+	},
+		submitHandler:function (form) {
+			form.submit();
+		},
+
+	});
+	});
+</script>
+
+
+<center>
+	<div id="page-wrap">
+		<div id="header">
+			<h1 align="center">Registration-Form</h1>
+		</div>
+		<div id="content" style="background-color: skyblue;">
+			<form action="#" method="post" id="register-form" >
+				<div id="form-content">
+					<fieldset>
+						<div class="fieldgroup">
+							<input type="text" name="firstname" placeholder="Enter First name" class="i1">
+						</div>
+						<div class="fieldgroup">
+							<input type="text" name="lastname" placeholder="Enter Last name" class="i1">
+						</div>
+						<div class="fieldgroup">
+							<input type="text" name="email" placeholder="Enter Email" class="i1">
+						</div>
+						<div class="fieldgroup">
+							<input type="text" name="password" placeholder="Enter your password" class="i1">
+						</div>
+						<div id="fieldgroup">
+							<input type="text" name="address" placeholder="Enter your address" class="i1">
+						</div>
+						<div id="fieldgroup">
+							<input type="submit" value="Sign up" class="i2">
+						</div>
+					</fieldset>
+				</div>
+			</form>
+		</div>
+		<h1><a href="#">Please read all instructions carefully</a></h1>
+	</div>
+</center>
+</div>
+
+</body>
+
+</html>

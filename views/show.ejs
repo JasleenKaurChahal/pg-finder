@@ -1,0 +1,32 @@
+<table border=1 cellspacing=0 style="font-size:20px";
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Password</th>
+<th>Delete</th>
+<th>Edit</th>
+</tr>
+<%if(data.length){
+for(var i=0;i<data.length;i++){%>
+<tr>
+<td><%=data[i].name%></td>
+<td><%=data[i].email%></td>
+<td><%=data[i].password%></td>
+
+<td><a href="">Delete</a></td>
+
+<td><a href="">Edit</a></td>
+<tr>
+       <%}
+  }
+else
+{%>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<%}%>
+</table>
+<br>
+<a href="/">Home</a>

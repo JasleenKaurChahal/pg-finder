@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register </title>
+    <link rel="stylesheet" href="fonts1/material-icon/css/material-design-iconic-font.min.css">
+    <!-- Font Icon -->
+    <!-- Main css -->
+    <link rel="stylesheet" href="css1/style.css">
+
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Register (Owner)</h2>
+                        <form method="POST" class="register-form" id="register-form" action="/signup">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="title"><i class="zmdi zmdi-account material-icons-title"></i></label>
+                                <input type="text" name="title" id="title" placeholder="Title of PG">
+                            </div>
+                            <div class="form-group">
+                                <label for="type"><i class="zmdi zmdi-account material-icons-type"></i></label>
+                                <input type="text" name="type" id="type" placeholder="Type of PG">
+                            </div>
+                            <div class="form-group">
+                                <label for="state"><i class="zmdi zmdi-account material-icons-state"></i></label>
+                                <input type="text" name="state" id="state" placeholder="State">
+                            </div>
+                            <div class="form-group">
+                                <label for="city"><i class="zmdi zmdi-account material-icons-city"></i></label>
+                                <input type="text" name="city" id="city" placeholder="Type of PG">
+                            </div>
+                            <div class="form-group">
+                                <label for="address"><i class="zmdi zmdi-account material-icons-adress"></i></label>
+                                <input type="text" name="adress" id="adress" placeholder="Complete Address">
+                            </div>
+                            <div class="form-group">
+                                <label for="rent"><i class="zmdi zmdi-account material-icons-rent"></i></label>
+                                <input type="text" name="rent" id="rent" placeholder="Rent of PG">
+                            </div>
+                           
+                            <div class="form-group">
+                            <h3><u><b>Amenities</b></u></h3>
+                            Electricity<input type="radio" value="electricity" name="electricity">
+                            Parking<input type="radio" value="parking" name="parking" >
+                            Furnished<input type="radio" value="furnished" name="Furnished">
+                            TV <input type="radio" value="TV" name="tv">
+                            Laundry<input type="radio" value="laundry" name="laundry">
+                            </div>
+                             <div class="form-group">
+                             <h3><u><b>Meals Included</b></u></h3><br>
+                             <input type="checkbox" name="meals1" id="meals1" class="meals1" value="true"/>
+                             <label for="meals1" class="label-agree-term"><span><span></span></span>Breakfast </label><br>
+                             <input type="checkbox" name="meals2" id="meals2" class="meals2" value="true"/>
+                             <label for="meals2" class="label-agree-term"><span><span></span></span>Lunch </label><br>
+                             <input type="checkbox" name="meals3" id="meals3" class="meals3" value="true"/>
+                             <label for="meals3" class="label-agree-term"><span><span></span></span>Dinner </label>
+                            </div>
+                            <div class="form-group">
+                                    <input type="checkbox" name="agree_term" id="agree_term" class="agree_term" value="true"/>
+                                   <label for="agree_term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="http://www.google.com" class="term-service" style="color:dodgerblue">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>                                                 
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="images1/signup-image.jpg" alt="sign up image"></figure>
+                        <a href="/login" class="signup-image-link" style="color:dodgerblue">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        </div>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>VIEW STATE/CITY</title>
+        <style>
+         body{
+        padding: 25px;
+        background: url(1.jpg);
+      }
+      p{
+        font-size:50px; 
+        color:white; 
+        text-align:center;
+      }
+      h2{
+        background-color:White; 
+        color:white; 
+        text-align:center;
+      }
+      a {
+    line-height: 1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+</style>
+</head>
+<body >
+        <p>LIST OF STATES AND CITIES</p>
+        <table border=1 cellspacing=0 style="font-size:20px" bgcolor="white" align="center";
+        <tr>
+        <th>STATE</th>
+        <th>CITY</th>
+        <th>PIN CODE</th>
+
+        <th>Delete</th>
+        <th>Edit</th>
+        </tr>
+        <%if(data.length){
+        for(var i=0;i<data.length;i++){%>
+        <tr>
+        <td><%=data[i].state%></td>
+        <td><%=data[i].city%></td>
+        <td><%=data[i].pin%></td>
+
+        <td><a href="/delete1/<%=data[i].state%>">Delete</a></td>
+        
+        <td><a href="/edit1/<%=data[i].state%>">Edit</a></td>
+        </tr>
+               <%}
+          }
+        else
+        {%>
+        <tr>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
+        </tr>
+        <%}%>
+        </table>
+        <br>
+        <h2><a  href="/admin">Admin</a><a  href="/">Home </a></h2>
+</body>
+</html>

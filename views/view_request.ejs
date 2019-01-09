@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VIEW REQUESTS</title>
+        <style>
+                body{
+               padding: 25px;
+               background: url(1.jpg);
+             }
+             p{
+               font-size:50px; 
+               color:white; 
+               text-align:center;
+             }
+             h2{
+               background-color:White; 
+               color:white; 
+               text-align:center;
+             }
+             a {
+           line-height: 1em;
+           display: inline-block;
+           text-decoration: none;
+           padding: 10px;
+           margin: 10px;
+       }
+       </style>
+       <script>$(document).on("click","#link",function(){
+            alert("Request accepted ! ");
+           });</script>
+    </head>
+    <p>LIST OF USERS</p>
+    <table border=1 cellspacing=0 style="font-size:20px" bgcolor="white" align="center";
+<tr>
+<th>Username</th>
+<th>Phone</th>
+<th>Address</th>
+<th>Start Date</th>
+<th>End Date</th>
+
+<th>Accept</th>
+<th>Decline</th>
+</tr>
+<%if(data.length){
+for(var i=0;i<data.length;i++){%>
+<tr>
+<td><%=data[i].uname%></td>
+<td><%=data[i].phone%></td>
+<td><%=data[i].address%></td>
+<td><%=data[i].start_date%></td>
+<td><%=data[i].end_date%></td>
+
+<td><a href="/delete5/<%=data[i].uname %>" id="link">Accept</a></td>
+
+<td><a href="/delete5/<%=data[i].uname %>">Decline</a></td>
+<tr> <!--do not close this else error will occur-->
+       <%}
+  }
+else
+{%>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<%}%>
+</table>
+<br>
+<h2><a  href="/admin">Admin</a><a  href="/">Home </a></h2>
+              
+</body>
+</html>

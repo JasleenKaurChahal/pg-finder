@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VIEW PG'S</title>
+        <style>
+                body{
+               padding: 25px;
+               background: url(1.jpg);
+             }
+             p{
+               font-size:50px; 
+               color:white; 
+               text-align:center;
+             }
+             h2{
+               background-color:White; 
+               color:white; 
+               text-align:center;
+             }
+             a {
+           line-height: 1em;
+           display: inline-block;
+           text-decoration: none;
+           padding: 10px;
+           margin: 10px;
+       }
+       </style>
+    </head>
+        <body>
+                <p>LIST OF PG</p>
+                <table border=1 cellspacing=0 style="font-size:20px" bgcolor="white" align="center";
+                <tr>
+<th>State</th>
+<th>City</th>
+<th>Rent</th>
+<th>Pin/ZIP Code</th>
+<th>Amenities</th>
+<th>Date</th>
+
+<th>Delete</th>
+<th>Edit</th>
+</tr>
+<%if(data.length){
+for(var i=0;i<data.length;i++){%>
+<tr>
+<td><%=data[i].state%></td>
+<td><%=data[i].city%></td>
+<td><%=data[i].rent%></td>
+<td><%=data[i].pin%></td>
+<td><%=data[i].amenities%></td>
+<td><%=data[i].date%></td>
+
+<td><a href="/delete2/<%=data[i].pin %>">Delete</a></td>
+
+<td><a href="">Edit</a></td>
+<tr> <!--do not close this else error-->
+       <%}
+  }
+else
+{%>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<%}%>
+</table>
+<br>
+<h2><a  href="/admin">Admin</a><a  href="/">Home </a></h2>
+                
+</body>
+</html>
